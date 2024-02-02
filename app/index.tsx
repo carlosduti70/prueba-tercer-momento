@@ -7,7 +7,10 @@ import {
   Paragraph,
   Separator,
   YGroup,
-  YStack
+  YStack, 
+  Avatar, 
+  XStack,
+  Image
 } from "tamagui";
 
 import { MySafeAreaView } from "../components/MySafeAreaView";
@@ -23,10 +26,16 @@ export default function Home() {
           space="$4"
           maxWidth={600}
         >
-          <H1 textAlign="center">Welcome to Tamagui.</H1>
+          <Image
+      source={{
+        uri: 'https://lumiere-a.akamaihd.net/v1/images/starwars_e58d682b.png',
+        width: 360,
+        height: 300,
+      }}
+    />
+          <H1 textAlign="center">Welcome to Star Wars.</H1>
           <Paragraph textAlign="center">
-            Here&apos;s a basic starter to show navigating from one screen to
-            another.
+          Aquí tienes una introducción básica para entrar al mundo de Star Wars.
           </Paragraph>
         </YStack>
 

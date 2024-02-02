@@ -1,7 +1,22 @@
-import { H5, Tabs, Text, Button, Input } from "tamagui";
+import type { CardProps } from 'tamagui'
+import { Plus, Edit3, Beer } from '@tamagui/lucide-icons'
+import { H5, H2, Paragraph, Tabs, Text, Adapt,
+  Button,
+  Dialog,
+  Fieldset,
+  Input,
+  Label,
+  Sheet,
+  Unspaced,
+  YStack,
+  XStack,
+  Card,
+  Image
+} from "tamagui";
 
 import { MyStack } from "../../components/MyStack";
 import SelectDemo from "../../components/SelectDemo";
+import DialogDemo from '../../components/DialogDemo';
 
 export default function Tab1() {
   return (
@@ -25,20 +40,40 @@ export default function Tab1() {
         </Tabs.List>
 
         <Tabs.Content value="tab1">
-          <H5>Films</H5>
-          <SelectDemo / >
+          <H2>Films</H2>
 
-          <Button>Create Character</Button>
+          <Card>
+            <Card.Header padded>
+              <H2>Film 1</H2>
+              <Paragraph theme="alt2">Director</Paragraph>
+              <Paragraph theme="alt2">Time</Paragraph>
+            </Card.Header>
+            <XStack>
+            
+            <DialogDemo
+              Title0='Edit Movie'
+              Boton="Edit"
+              Title1="Titulo"
+              Title2= 'Duracion'
+              Title3='Autor'
+            />
+              <Button icon={Beer}>Delete</Button>
+            </XStack>
+          </Card>
+
         </Tabs.Content>
 
 
         <Tabs.Content value="tab2">
           <H5>SubTab 2 Content</H5>
+          
         </Tabs.Content>
         <Tabs.Content value="tab3">
           <H5>SubTab 3 Content</H5>
         </Tabs.Content>
       </Tabs>
+
+      <Button icon={Plus}>Add</Button>
     </MyStack>
   );
 }
