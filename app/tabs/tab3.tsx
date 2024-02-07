@@ -1,6 +1,6 @@
 import { H5, Tabs, Text } from "tamagui";
-import Scenes from '../../components/Scenes';
 import { MyStack } from "../../components/MyStack";
+import Characters from "../../components/Characters";
 
 export default function Tab2() {
   return (
@@ -11,7 +11,7 @@ export default function Tab2() {
         flexDirection="column"
         width="100%"
       >
-        <Tabs.List>
+        {/* <Tabs.List>
           <Tabs.Tab value="tab1">
             <Text>SubTab 1</Text>
           </Tabs.Tab>
@@ -21,14 +21,14 @@ export default function Tab2() {
           <Tabs.Tab value="tab3">
             <Text>SubTab 3</Text>
           </Tabs.Tab>
-        </Tabs.List>
+        </Tabs.List> */}
 
         <Tabs.Content value="tab1">
           <H5>SubTab 1</H5>
         </Tabs.Content>
         <Tabs.Content value="tab2">
           <H5>SubTab 2 Content</H5>
-          <Scenes/>
+          <Characters/>
         </Tabs.Content>
         <Tabs.Content value="tab3">
           <H5>SubTab 3 Content</H5>

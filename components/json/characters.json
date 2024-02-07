@@ -1,0 +1,20 @@
+[
+    {
+    "name": "Obi-Wan Kenobi",
+    "description": "Un venerado maestro Jedi con una larga historia en la Orden Jedi. Después de la caída de la República, se exilia y supervisa el crecimiento de Luke Skywalker.",
+    "cost": "Alto",
+    "Bando": "Jedi"
+    },
+    {
+    "name": "Princess Leia Organa",
+    "description": "Miembro de la familia real de Alderaan y líder de la Alianza Rebelde. Contribuye significativamente a la lucha contra el Imperio Galáctico.",
+    "cost": "Moderado",
+    "Bando": "Rebelde"
+    },
+    {
+    "name": "Han Solo",
+    "description": "Contrabandista y piloto del Halcón Milenario. Inicialmente interesado solo en recompensas, se une a la lucha contra el Imperio después de conocer a Luke y Leia.",
+    "cost": "Moderado",
+    "Bando": "Neutral"
+}
+]

@@ -1,4 +1,4 @@
-import { X } from "@tamagui/lucide-icons";
+import { Edit3, X } from "@tamagui/lucide-icons";
 import {
   Adapt,
   Button,
@@ -12,13 +12,12 @@ import {
   XStack
 } from "tamagui";
 
-import SelectDemo from "./SelectDemo";
 
-export default function DialogDemo ( {Boton="boton", Title0="titlie0", Title1="title1", Title2="title2", Title3="title3"}) {
+export default function DialogDemo ( {Boton="boton", Title0="titlie0", Title1="title1", Title2="title2", Title3="title3", Title4="titlie4", Data1="",Data2="", Data3="", Data5=""}) {
   return (
     <Dialog modal>
       <Dialog.Trigger asChild>
-        <Button>{Boton}</Button>
+        <Button icon={Edit3}>{Boton}</Button>
       </Dialog.Trigger>
 
       <Adapt
@@ -66,14 +65,11 @@ export default function DialogDemo ( {Boton="boton", Title0="titlie0", Title1="t
           space
         >
           <Dialog.Title>{Title0}</Dialog.Title>
-          <Dialog.Description>
-            Make changes to your profile here. Click save when you&apos;re done.
-          </Dialog.Description>
           <Fieldset>
             <Label htmlFor="name">{Title1}</Label>
             <Input
               id="name"
-              defaultValue="Star Wars"
+              defaultValue={Data1}
             />
           </Fieldset>
 
@@ -81,18 +77,25 @@ export default function DialogDemo ( {Boton="boton", Title0="titlie0", Title1="t
             <Fieldset>
               <Label htmlFor="time">{Title2}</Label>
               <Input
-                id="name"
-                defaultValue="2h 1m"
+                id="time"
+                defaultValue={Data2}
               />
             </Fieldset>
             <Fieldset>
               <Label htmlFor="name">{Title3}</Label>
               <Input
                 id="director"
-                defaultValue="George Lucas"
+                defaultValue={Data3}
                 />
             </Fieldset>
           </XStack>
+          <Fieldset>
+              <Label htmlFor="name">{Title4}</Label>
+              <Input
+                id="releaseYear"
+                defaultValue={Data5}
+                />
+            </Fieldset>
 
           <YStack
             alignItems="flex-end"
@@ -105,6 +108,7 @@ export default function DialogDemo ( {Boton="boton", Title0="titlie0", Title1="t
               <Button
                 theme="green_Button"
                 aria-label="Close"
+                
               >
                 Save
               </Button>

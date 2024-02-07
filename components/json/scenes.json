@@ -1,0 +1,14 @@
+[
+    {
+    "title": "Introducción",
+    "description": "Luke Skywalker descubre un mensaje oculto en un droide astromecánico llamado R2-D2.",
+    "cost": "10",
+    "duration": "15"
+    }       ,
+    {
+    "title": "El entrenamiento de Luke",
+    "description": "Luke comienza su entrenamiento Jedi con Obi-Wan Kenobi en Tatooine.",
+    "cost": "12",
+    "duration": "20"
+    }
+]

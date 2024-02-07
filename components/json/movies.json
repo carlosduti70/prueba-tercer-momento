@@ -1,0 +1,20 @@
+[
+    {
+    "title": "Star Wars: Episode I",
+    "director": "George Lucas",
+    "duration": "136 minutes",
+    "releaseYear": "1999"
+    },
+    {
+    "title": "Star Wars: Episode II",
+    "director": "George Lucas",
+    "duration": "142 minutes",
+    "releaseYear": "2002"
+    },
+    {
+    "title": "Star Wars: Episode III",
+    "director": "George Lucas",
+    "duration": "140 minutes",
+    "releaseYear": "2005"
+    }
+]
